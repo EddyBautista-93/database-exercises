@@ -1,6 +1,6 @@
 USE codeup_test_db;
 
-CREATE TABLE If NOT EXISTS quotes (
+CREATE TABLE If NOT EXISTS albums (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     artist VARCHAR(25),
     name VARCHAR(20),
