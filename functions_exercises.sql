@@ -7,7 +7,7 @@ ORDER BY last_name, first_name DESC;
 
 
 
-SELECT emp_no, first_name, last_name
+SELECT CONCAT(emp_no, ' - ', first_name,'-',last_name)
 FROM employees
 WHERE last_name like 'E%'
 ORDER BY emp_no;
@@ -29,7 +29,7 @@ FROM employees
 WHERE last_name like 'E%E';
 
 
-SELECT emp_no, first_name, last_name, hire_date, birth_date
+SELECT DATEDIFF(CURDATE(),hire_date)as datediff, first_name, last_name,emp_no
 FROM employees
 WHERE hire_date Like '199%' AND birth_date like '%12-25%'
 ORDER BY birth_date ASC, hire_date DESC ;
