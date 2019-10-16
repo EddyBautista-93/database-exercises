@@ -13,6 +13,7 @@ SELECT DISTINCT last_name, count(*)
 FROM employees
 WHERE last_name like '%q%' and last_name not like '%qu%'
 group by last_name
+
 ORDER BY COUNT(*);
 
 SELECT DISTINCT  gender,count(*)
